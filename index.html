@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TA-TE-TI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="juego.js" language="javascript" type="text/javascript"></script>
+    </head>
+    <body>
+        <div  class="pagina">
+            <h1 class="cabecera">TA-TE-TI</h1>
+            <h2> Selecciona el tipo de juego: </h2>
+            <br>
+            <select id="opcionJ" class="opciones">
+                <option value="Pl2Pl">Player 1 vs. Player 2</option>
+                <option value="Pl2Pc">Player vs. PC</option>
+                <option value="PC2PC">PC vs. PC</option>
+            </select>
+            <br>
+            <br>
+            <button class="boton" id="S" onclick="iniciar()">Empezar!</button>
+            <br>
+            <br>
+            <div class="ocultar" id="tablero">
+                <div>
+                    <button class="celda" id="0" onclick=""> </button>
+                    <button class="celdaI" id="1" onclick=""> </button>
+                    <button class="celdaI" id="2" onclick=""> </button>
+                </div>
+                <div>
+                    <button class="celda" id="3" onclick=""> </button>
+                    <button class="celdaI" id="4" onclick=""> </button>
+                    <button class="celdaI" id="5" onclick=""> </button>
+                </div>
+                <div>
+                    <button class="celda" id="6" onclick=""> </button>
+                    <button class="celdaI" id="7" onclick=""> </button>
+                    <button class="celdaI" id="8" onclick=""> </button>
+                </div>
+            </div>
+            <br>
+            <p id="ganador" class="msj"> </p>
+            <br>
+            <button class="ocultar" id="R" onclick="reiniciar();">Reiniciar</button>
+        </div>
+    </body>
+</html>
